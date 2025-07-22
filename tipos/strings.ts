@@ -1,12 +1,12 @@
 (()=>{
 
-    const batman: string = 'batman';
-    const linternaVerde: string = "Linterna's Verde";
-    const volcanNegro: string = `Heroe: Volcan Negro`;
+const batman: string = 'batman';
+const linternaVerde: string = "Linterna's Verde";
+const volcanNegro: string = `Heroe: Volcan Negro`;
 
-    console.log(batman.toLocaleUpperCase());
-    console.log(linternaVerde.toLocaleLowerCase());
-    console.log(volcanNegro.concat(batman));
+console.log(batman.toLocaleUpperCase());
+console.log(linternaVerde.toLocaleLowerCase());
+console.log(volcanNegro.concat(batman));
 
 })()
 /* 
