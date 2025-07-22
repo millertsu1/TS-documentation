@@ -1,43 +1,4 @@
-(() => {
-  /* Ejemplo 1: definir un objeto en TS, se hace de la misma forma que en JavaScript*/
-  let flash = {
-    name: "Barry Allen",
-    age: 24,
-    powers: ["Super velocidad", "Viajar en el tiempo"],
-  };
-  console.log(flash);
 
-
-  /* Ejemplo 2: Como crear tipos especificos en TS, aqui definimos los tipos de datos que tendra nuestras propiedades */
-
-  let spiderman: { name: string; age: number; powers: string[] } = {
-    name: "Peter Parker",
-    age: 25,
-    powers: ["Trepar muros", "Lanzar telarañas"],
-  };
-  console.log(spiderman);
-
-  /* Ejemplo 3: Metodos dentro de objetos, aqui definimos un metodo llamado getName, que es opcional y ademas devuelve un string*/
-
-  let batman: {name:string, age:number, powers:string[], getName?:() => string} = {
-    name: 'Bruce Wayne',
-    age: 35,
-    powers: ['Super fuerza', 'Super inteligencia'],
-  }
-
-/* modificamos el objetos batman agregandole un metodo nuevo, aqui modificamos el metodo anterior por uno nuevo  */
-  batman = {
-    name: 'Bruce Wayne',
-    age: 35,
-    powers: ['Super fuerza', 'Super inteligencia', 'Mucho dinero'],
-    getName() {
-      return this.name
-    }
-  }
-   
-})();
-
-/* 
 !Explicacion ejemplo 1
 Los objetos en TS son muy similares a los de JS, pero con la diferencia de que se pueden definir los tipos de las propiedades, ademas esto nos ayuda a tener mas control de las propiedades del objeto.
 
@@ -61,5 +22,3 @@ En este ejemplo estamos definiendo un metodo que nos permitira obtener el nombre
 Aqui estamos agregando al objeto batman un nuevo metodo que es getName() y dentro de este metodo estamos retornando el nombre del objeto, en este caso batman.
 
 Dentro de el tipado del objeto estamos definiendo las propiedades y sus metodos, estos ultimos como inicialmente no estaban definidos cuando se creo el objeto en esa definicion estamos agregando que nuestro metodo dentro del objeto es del tipo funcion, que es opcional que esta funcion es de tipo string ya que recibira este tipo de dato.
-
-*/
