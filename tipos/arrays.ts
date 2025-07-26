@@ -1,15 +1,21 @@
 (() =>{
 
-    const numbers: number[] =[1,2,3,4,5,6,7,8,9,10];
+const numbers: number[] =[1,2,3,4,5];
 
-    const frutas: string[] = ['manzana', 'pera', 'uva', 'sandia', 'naranja'];
+const frutas: string[] = ['manzana', 'pera', 'uva'];
 
-    numbers.push(11);
-    frutas.push('mango');
+const numbersLetters: (number | string)[] = [1, 'dos', 3];
 
-    
-    console.log(numbers);
-    console.log(frutas);
+numbers.push(11);
+frutas.push('mango');
+
+numbersLetters.push('cinco');
+numbersLetters.push(6);
+numbersLetters.push('siete');
+ 
+console.log(numbers);
+console.log(frutas);
+console.log(numbersLetters);
 
 })()
 

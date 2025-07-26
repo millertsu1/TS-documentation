@@ -1,26 +1,26 @@
 "use strict";
 (() => {
-    /* Ejemplo 1: definir un objeto en TS */
+    /* Ejemplo 1: definir un objeto en TS, se hace de la misma forma que en JavaScript*/
     let flash = {
         name: "Barry Allen",
         age: 24,
         powers: ["Super velocidad", "Viajar en el tiempo"],
     };
     console.log(flash);
-    /* Ejemplo 2: Como crear tipos especificos en TS */
+    /* Ejemplo 2: Como crear tipos especificos en TS, aqui definimos los tipos de datos que tendra nuestras propiedades */
     let spiderman = {
         name: "Peter Parker",
         age: 25,
         powers: ["Trepar muros", "Lanzar telarañas"],
     };
     console.log(spiderman);
-    /* Ejemplo 3: Metodos dentro de objetos */
+    /* Ejemplo 3: Metodos dentro de objetos, aqui definimos un metodo llamado getName, que es opcional y ademas devuelve un string*/
     let batman = {
         name: 'Bruce Wayne',
         age: 35,
         powers: ['Super fuerza', 'Super inteligencia'],
     };
-    /* modificamos el objetos batman agregandole un metodo nuevo  */
+    /* modificamos el objetos batman agregandole un metodo nuevo, aqui modificamos el metodo anterior por uno nuevo  */
     batman = {
         name: 'Bruce Wayne',
         age: 35,
