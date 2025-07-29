@@ -1,0 +1,10 @@
+
+# Dependencies
+/node_modules
+
+# Compiled JavaScript files
+*.js
+*.js.map
+
+# Editor Config
+.vscode/
